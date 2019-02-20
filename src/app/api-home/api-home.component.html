@@ -1,0 +1,19 @@
+<mat-grid-list cols="1" rowHeight="1:0.12">
+    <mat-grid-tile><h1>API Example Cats</h1></mat-grid-tile>
+</mat-grid-list>
+<br>
+<input type="text" name="" id="">
+<button (click)="darValor()">Enviar</button>
+<br>
+
+<!--primera forma de heredar 
+
+<mat-card *ngFor="let info of infoCats">
+    <app-api-list [infoApi]="info"></app-api-list>
+</mat-card>
+
+-->
+
+<!--Segunda Forma de Heredar-->
+<app-api-list *ngFor="let info of infoCats" [infoApi]="info"></app-api-list>
+
